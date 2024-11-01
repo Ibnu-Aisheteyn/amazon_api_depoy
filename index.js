@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
     message: "success",
   });
 });
-app.post("/payment/create", async (req, res) => {
+app.post("/payments/create", async (req, res) => {
   const total = req.query.total;
 
   if (total > 0) {
